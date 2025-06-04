@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABLAS DE CARROS</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    /* Bordes y esquinas redondeadas */
+    table, th, td {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
+    /* Colores por columna */
+    col.modelo {
+      background-color: #d0f0c0;
+    }
+
+    col.año {
+      background-color: #fce4b8;
+    }
+
+    col.precio {
+      background-color: #b8e0fc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #555;
+      color: white;
+    }
+
+    td {
+      background-color: #f0f8ff;
+    }
+
+    caption {
+      caption-side: top;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tabla de Carros</h1>
+  </header>
+
+  <main>
+    <section>
+      <table>
+        <caption>Inventario de Carros 2025</caption>
+
+        <!-- Aplicar estilos a columnas -->
+        <colgroup>
+          <col class="modelo">
+          <col class="año">
+          <col class="precio">
+          <col span="2" style="background-color: #e0f7fa;">
+        </colgroup>
+
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Año</th>
+            <th>Precio</th>
+            <th colspan="2">Extras</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Toyota Corolla</td>
+            <td>2022</td>
+            <td>$20,000</td>
+            <td>GPS</td>
+            <td>Bluetooth</td>
+          </tr>
+          <tr>
+            <td>Ford Fiesta</td>
+            <td>2023</td>
+            <td>$18,000</td>
+            <td rowspan="2" colspan="2">Paquete Premium</td>
+          </tr>
+          <tr>
+            <td>Honda Civic</td>
+            <td>2025</td>
+            <td>$25,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
